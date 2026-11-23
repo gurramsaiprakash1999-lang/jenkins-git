@@ -223,4 +223,153 @@
 
     .card p {
       color: var(--text-muted);
-      font-size: 0.95
+      font-size: 0.95rem;
+    }
+
+    /* Alert / Audit Banner */
+    .audit-banner {
+      background-color: var(--bg-panel);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 64px 0;
+      text-align: center;
+    }
+
+    .audit-banner h2 {
+      font-size: 1.85rem;
+      margin-bottom: 12px;
+    }
+
+    .audit-banner p {
+      color: var(--text-muted);
+      max-width: 550px;
+      margin: 0 auto 24px;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 32px 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+      .nav-links {
+        gap: 12px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">CYBER<span>HUB</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#capabilities">Defense</a></li>
+          <li><a href="#intel">Threat Intel</a></li>
+          <li><a href="#audit" class="btn-nav">Security Audit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="status-badge">● SYSTEM STATUS: PROTECTED</div>
+      <h1>Next-Gen Cybersecurity Technology Hub</h1>
+      <p>Defend your digital perimeter with real-time threat intelligence, automated incident response, and zero-trust architecture.</p>
+      <div class="hero-buttons">
+        <a href="#capabilities" class="btn-primary">Explore Defenses</a>
+        <a href="#audit" class="btn-secondary">Request Penetration Test</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Defense Pillars -->
+  <section id="capabilities" class="capabilities">
+    <div class="container">
+      <h2 class="section-title">Defense Capabilities</h2>
+      <p class="section-subtitle">Multi-layered protection engineered for modern enterprise networks.</p>
+      
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3>Threat Detection & SOC</h3>
+          <p>24/7 continuous monitoring and AI-driven anomaly detection to neutralize attacks before escalation.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🔐</div>
+          <h3>Zero-Trust IAM</h3>
+          <p>Strict identity verification, least-privilege access controls, and hardware-backed authentication.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🐞</div>
+          <h3>Penetration Testing</h3>
+          <p>Offensive red-team simulations and vulnerability assessments to patch weak points proactively.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">📡</div>
+          <h3>Incident Response</h3>
+          <p>Rapid containment, digital forensics, and automated recovery playbooks for zero-day exploits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section id="audit" class="audit-banner">
+    <div class="container">
+      <h2>Assess Your Attack Surface</h2>
+      <p>Identify critical vulnerabilities across your cloud, endpoints, and APIs with a comprehensive security review.</p>
+      <a href="#contact" class="btn-primary">Schedule Assessment</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Cybersecurity Technology Hub. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Advisory Feed</a>
+        <a href="#">PGP Key</a>
+        <a href="#">Compliance</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
